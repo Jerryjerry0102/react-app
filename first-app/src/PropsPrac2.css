@@ -1,0 +1,33 @@
+.bestSeller {
+  background-color: blanchedalmond;
+  padding: 30px;
+  width: 600px;
+  height: 600px;
+}
+.inner {
+  text-align: center;
+}
+.detail {
+  text-align: left;
+  margin-left: 80px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.title {
+  color: orangered;
+  font-size: 30px;
+  font-weight: 700;
+}
+img {
+  width: 200px;
+  margin: 20px;
+}
+.content {
+  font-size: 30px;
+  font-weight: 700;
+}
+.detail {
+  font-size: 15px;
+  font-weight: 700;
+}
