@@ -17,12 +17,18 @@ import MyComponent2 from "./MyComponent2";
 import StateComponent from "./StateComponent";
 import StatePrac from "./StatePrac";
 import UseStatePrac from "./UseStatePrac";
+import EventClassComponent from "./EventClassComponent";
+import EventHandling from "./EventHandling";
+import StateEventPrac from "./StateEventPrac";
+import StateEventPrac1 from "./StateEventPrac1";
+import StateEventPrac2 from "./StateEventPrac2";
 
 function App() {
   return (
     <>
-      <StatePrac></StatePrac>
-      <UseStatePrac></UseStatePrac>
+      {/* <EventClassComponent></EventClassComponent> */}
+      <StateEventPrac1 />
+      <StateEventPrac2 />
     </>
   );
 }
