@@ -22,13 +22,16 @@ import EventHandling from "./EventHandling";
 import StateEventPrac from "./StateEventPrac";
 import StateEventPrac1 from "./StateEventPrac1";
 import StateEventPrac2 from "./StateEventPrac2";
+import Counter from "./Counter";
+import State from "./State";
+import Say from "./Say";
 
 function App() {
   return (
     <>
-      {/* <EventClassComponent></EventClassComponent> */}
-      <StateEventPrac1 />
-      <StateEventPrac2 />
+      <Counter />
+      <State />
+      <Say />
     </>
   );
 }
