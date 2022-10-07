@@ -1,0 +1,34 @@
+// 함수형 컴포넌트에서 state를 이용하려면 이 한 줄 필요
+import React, { useState } from "react";
+
+const UseStateComponent = (props) => {
+  // 구조분해 할당
+  // useState가 return하는 값이 배열
+  // 0번 인덱스 -> 변수
+  // 1번 인덱스 -> 함수
+  // 배열구조분해 할당을 해야함
+  //   function useState(초기값){
+  //     ~~~~~~~
+
+  //     return [변수, 함수]
+  //   }
+  let [number, setNumber] = useState(0);
+  const changeNumber = () => {
+    setNumber(number + 1);
+  };
+  return (
+    <>
+      <h1>{number}</h1>
+      <button
+        onClick={() => {
+          setNumber(number + 1);
+        }}
+      >
+        +1
+      </button>
+      <button onClick={changeNumber}>+1</button>
+    </>
+  );
+};
+
+export default UseStateComponent;

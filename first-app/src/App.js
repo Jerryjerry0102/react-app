@@ -14,16 +14,15 @@ import PropsPrac2 from "./PropsPrac2";
 import PropsPrac3 from "./PropsPrac3";
 import MyComponent from "./MyComponent";
 import MyComponent2 from "./MyComponent2";
+import StateComponent from "./StateComponent";
+import StatePrac from "./StatePrac";
+import UseStatePrac from "./UseStatePrac";
 
 function App() {
   return (
     <>
-      <MyComponent />
-      <MyComponent2 name="React" favoriteNumber={12}>
-        리액트
-      </MyComponent2>
-      <PropsPrac3 text="App 컴포넌트에서 넘겨준 text props입니다."></PropsPrac3>
-      <PropsPrac3></PropsPrac3>
+      <StatePrac></StatePrac>
+      <UseStatePrac></UseStatePrac>
     </>
   );
 }
