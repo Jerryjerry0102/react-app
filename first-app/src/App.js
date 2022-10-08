@@ -22,16 +22,16 @@ import EventHandling from "./EventHandling";
 import StateEventPrac from "./StateEventPrac";
 import StateEventPrac1 from "./StateEventPrac1";
 import StateEventPrac2 from "./StateEventPrac2";
+// 복습컨텐츠
 import Counter from "./Counter";
 import State from "./State";
 import Say from "./Say";
+import ReviewEvent from "./ReviewEvent";
 
 function App() {
   return (
     <>
-      <Counter />
-      <State />
-      <Say />
+      <ReviewEvent />
     </>
   );
 }
