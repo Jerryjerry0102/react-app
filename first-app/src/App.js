@@ -29,6 +29,7 @@ import Say from "./Say";
 import ReviewEvent from "./ReviewEvent";
 import Map from "./Map";
 import Event_ex from "./Event_ex";
+import Sample from "./Sample";
 // 수업 실습
 import Event_prac from "./Event_prac";
 
@@ -37,7 +38,8 @@ function App() {
     <>
       {/* <Map /> */}
       {/* <Event_ex /> */}
-      <Event_prac />
+      {/* <Event_prac /> */}
+      <Sample />
     </>
   );
 }
