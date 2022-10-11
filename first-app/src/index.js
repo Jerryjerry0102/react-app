@@ -10,7 +10,7 @@ import App from "./App";
 // 리액트가 화면을 출력하는 코드는 ReactDom.render 이부분
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <App />
+  // </React.StrictMode>
 );

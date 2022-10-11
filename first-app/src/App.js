@@ -27,11 +27,17 @@ import Counter from "./Counter";
 import State from "./State";
 import Say from "./Say";
 import ReviewEvent from "./ReviewEvent";
+import Map from "./Map";
+import Event_ex from "./Event_ex";
+// 수업 실습
+import Event_prac from "./Event_prac";
 
 function App() {
   return (
     <>
-      <ReviewEvent />
+      {/* <Map /> */}
+      {/* <Event_ex /> */}
+      <Event_prac />
     </>
   );
 }
