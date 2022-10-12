@@ -3,45 +3,10 @@
 // import glass from "./glass.png";
 // import "./App.css";
 // // .js 생략가능
-// import FunctionComponent from "./FunctionComponent";
-// import ClassComponent from "./ClassComponent";
-// import ClassTest from "./ClassTest";
-// import ClassTest2 from "./ClassTest2";
-// import FunctionTest from "./FunctionTest";
-// import FunctionTest2 from "./FunctionTest2";
-// import PropsPrac from "./PropsPrac";
-// import PropsPrac2 from "./PropsPrac2";
-// import PropsPrac3 from "./PropsPrac3";
-// import MyComponent from "./MyComponent";
-// import MyComponent2 from "./MyComponent2";
-// import StateComponent from "./StateComponent";
-// import StatePrac from "./StatePrac";
-// import UseStatePrac from "./UseStatePrac";
-// import EventClassComponent from "./EventClassComponent";
-// import EventHandling from "./EventHandling";
-// import StateEventPrac from "./StateEventPrac";
-// import StateEventPrac1 from "./StateEventPrac1";
-// import StateEventPrac2 from "./StateEventPrac2";
-// // 복습컨텐츠
-// import Counter from "./Counter";
-// import State from "./State";
-// import Say from "./Say";
-// import ReviewEvent from "./ReviewEvent";
-// import Map from "./Map";
-// import Event_ex from "./Event_ex";
-// import Sample from "./Sample";
-// // 수업 실습
-// import Event_prac from "./Event_prac";
-// import RefTest from "./RefTest";
 
 // function App() {
 //   return (
 //     <>
-//       {/* <Map /> */}
-//       {/* <Event_ex /> */}
-//       {/* <Event_prac /> */}
-//       {/* <Sample /> */}
-//       <RefTest />
 //     </>
 //   );
 // }
@@ -131,15 +96,55 @@
 // export default App;
 
 // 시작
+// import React, { Component } from "react";
+// import Scroll from "./ref/Scroll";
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <>
+//         <Scroll ref={(ref) => (this.Scroll = ref)} />
+//         <button
+//           onClick={() => {
+//             this.Scroll.scrollBottom();
+//           }}
+//         >
+//           맨 밑으로
+//         </button>
+//       </>
+//     );
+//   }
+// }
+
+// export default App;
+
+// App.js
+
 import React, { Component } from "react";
-import ScrollBox from "./ScrollBox";
+import LifeCycle from "./lifeCycle/LifeCycle";
+
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
 
 class App extends Component {
+  state = {
+    color: "#000000",
+  };
+
+  handleClick = () => {
+    this.setState({
+      color: getRandomColor(),
+    });
+  };
+
   render() {
     return (
-      <>
-        <ScrollBox />
-      </>
+      <div>
+        <button onClick={this.handleClick}>랜덤 색상</button>
+
+        <LifeCycle color={this.state.color} />
+      </div>
     );
   }
 }
