@@ -1,0 +1,43 @@
+$red: #ff0000;
+$orange: #ffbb00;
+$yellow: #ffe400;
+
+@mixin animation($name, $move) {
+  @keyframes mo#{$name} {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate($move, 0);
+    }
+    50% {
+      transform: translate($move, $move);
+    }
+    75% {
+      transform: translate(0, $move);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  animation-name: mo#{$name};
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  &.red {
+    background-color: $red;
+    @include animation(move, 100px);
+  }
+  &.orange {
+    background-color: $orange;
+    @include animation(move2, 200px);
+  }
+  &.yellow {
+    background-color: $yellow;
+    @include animation(move3, 300px);
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --color-red: red;
+}
+
+.test {
+  background-color: blue;
+  color: var(--color-red);
+}
+
+.txt {
+  color: white;
+}

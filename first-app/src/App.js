@@ -1,19 +1,27 @@
-// import logo from "./logo.svg";
-// // 이미지 불러오는 법
-// import glass from "./glass.png";
-// import "./App.css";
-// // .js 생략가능
+import logo from "./logo.svg";
+// 이미지 불러오는 법
+import HookTest from "./hook/HookTest";
+import HookTest2 from "./hook/HookTest2";
+import HookTest3 from "./hook/HookTest3";
+import CssTest from "./css&sass/CssTest";
+import Earthworm from "./css&sass/Earthworm";
+import Scss from "./css&sass/Scss";
+import ScssPrac from "./css&sass/ScssPrac";
+import ScssPrac2 from "./css&sass/ScssPrac2";
+// .js 생략가능
 
-// function App() {
-//   return (
-//     <>
-//     </>
-//   );
-// }
+function App() {
+  return (
+    <>
+      {/* <ScssPrac /> */}
+      <ScssPrac2 />
+    </>
+  );
+}
 
-// // 이 코드는 다른 파일에서 이 파일을 import할 때,
-// // 위에서 선언한 App 함수를 불러오도록 설정하는 코드
-// export default App;
+// 이 코드는 다른 파일에서 이 파일을 import할 때,
+// 위에서 선언한 App 함수를 불러오도록 설정하는 코드
+export default App;
 
 // 2022.10.12 수업
 // import React, { Component } from "react";
@@ -62,10 +70,11 @@
 
 // export default App;
 
-// 실습
+// 실습;
 // import React, { Component } from "react";
-// import TestComponent from "./TestComponent";
-// import LifeCyclePractice from "./LifeCyclePractice";
+// import TestComponent from "./lifeCycle/TestComponent";
+// import LifeCyclePractice from "./lifeCycle/LifeCyclePractice";
+// import HookLifeCyclePractice from "./hook/HookLifeCyclePractice";
 
 // class App extends Component {
 //   state = {
@@ -87,7 +96,7 @@
 
 //         <hr style={{ margin: "50px 0" }}></hr>
 
-//         {this.state.value ? <LifeCyclePractice /> : <TestComponent />}
+//         {this.state.value ? <HookLifeCyclePractice /> : <TestComponent />}
 //       </div>
 //     );
 //   }
@@ -119,34 +128,33 @@
 // export default App;
 
 // App.js
+// import React, { Component } from "react";
+// import LifeCycle from "./lifeCycle/LifeCycle";
 
-import React, { Component } from "react";
-import LifeCycle from "./lifeCycle/LifeCycle";
+// function getRandomColor() {
+//   return "#" + Math.floor(Math.random() * 16777215).toString(16);
+// }
 
-function getRandomColor() {
-  return "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
+// class App extends Component {
+//   state = {
+//     color: "#000000",
+//   };
 
-class App extends Component {
-  state = {
-    color: "#000000",
-  };
+//   handleClick = () => {
+//     this.setState({
+//       color: getRandomColor(),
+//     });
+//   };
 
-  handleClick = () => {
-    this.setState({
-      color: getRandomColor(),
-    });
-  };
+//   render() {
+//     return (
+//       <div>
+//         <button onClick={this.handleClick}>랜덤 색상</button>
 
-  render() {
-    return (
-      <div>
-        <button onClick={this.handleClick}>랜덤 색상</button>
+//         <LifeCycle color={this.state.color} />
+//       </div>
+//     );
+//   }
+// }
 
-        <LifeCycle color={this.state.color} />
-      </div>
-    );
-  }
-}
-
-export default App;
+// export default App;

@@ -13,6 +13,8 @@ class LifeCycle extends Component {
     console.log("constructor");
   }
 
+  // 반환값이 state값을 변경시킨다. 그래서 this.state.color 다 적을 필요 없음
+  // null이면 아무것도 변경시키지 않는다.
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log("getDerivedStateFromProps", nextProps, prevState);
 
@@ -27,7 +29,13 @@ class LifeCycle extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("shouldComponentUpdate", nextProps, nextState);
+    console.log(
+      "shouldComponentUpdate",
+      nextProps,
+      nextState,
+      this.props,
+      this.state
+    );
 
     return nextState.number % 10 !== 4;
     // 숫자의 마지막 자리가 4면 리렌더링하지 않음.
