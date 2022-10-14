@@ -11,12 +11,12 @@
 // import RouterTest from "./router/RouterTest";
 // // .js 생략가능
 
-import Average from "./hook/Average";
+import Mystyled from "./css&sass/Mystyled";
 
 const App = () => {
   return (
     <>
-      <Average />
+      <Mystyled />
     </>
   );
 };
@@ -208,4 +208,18 @@ export default App;
 
 // // 이 코드는 다른 파일에서 이 파일을 import할 때,
 // // 위에서 선언한 App 함수를 불러오도록 설정하는 코드
+// export default App;
+
+// classnames
+// import Mycss from "./css&sass/Mycss";
+// import Sass_ex from "./css&sass/Sass_ex";
+
+// const App = () => {
+//   return (
+//     <>
+//       <Mycss yellow={true} green={"green"} />
+//     </>
+//   );
+// };
+
 // export default App;

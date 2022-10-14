@@ -1,0 +1,54 @@
+@import "./styles/utils.scss";
+
+.Sass_ex {
+  display: flex;
+  background: $oc-red-2;
+  @include media("<768px") {
+    background: $oc-red-9;
+  }
+  .box {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &.red {
+      // .red 클래스가 .box와 함께 사용되었을 때
+      background: $red;
+      @include square(1);
+    }
+
+    &.orange {
+      background: $orange;
+      @include square(2);
+    }
+
+    &.yellow {
+      background: $yellow;
+      @include square(3);
+    }
+
+    &.peach {
+      background: $peach;
+      @include square(4);
+    }
+
+    &.skyblue {
+      background: $skyblue;
+      @include square(5);
+    }
+
+    &.green {
+      background: $green;
+      @include square(6);
+    }
+
+    &.blue {
+      background: $blue;
+      @include square(7);
+    }
+
+    &:hover {
+      // .box에 마우스를 올렸을 때
+      background: black;
+    }
+  }
+}
