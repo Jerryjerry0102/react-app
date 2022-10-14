@@ -1,20 +1,22 @@
-import logo from "./logo.svg";
-// 이미지 불러오는 법
-import HookTest from "./hook/HookTest";
-import HookTest2 from "./hook/HookTest2";
-import HookTest3 from "./hook/HookTest3";
-import CssTest from "./css&sass/CssTest";
-import Earthworm from "./css&sass/Earthworm";
-import Scss from "./css&sass/Scss";
-import ScssPrac from "./css&sass/ScssPrac";
-import ScssPrac2 from "./css&sass/ScssPrac2";
-// .js 생략가능
+// import logo from "./logo.svg";
+// // 이미지 불러오는 법
+// import HookTest from "./hook/HookTest";
+// import HookTest2 from "./hook/HookTest2";
+// import HookTest3 from "./hook/HookTest3";
+// import CssTest from "./css&sass/CssTest";
+// import Earthworm from "./css&sass/Earthworm";
+// import Scss from "./css&sass/Scss";
+// import ScssPrac from "./css&sass/ScssPrac";
+// import ScssPrac2 from "./css&sass/ScssPrac2";
+// import RouterTest from "./router/RouterTest";
+// // .js 생략가능
+
+import UseStateCounter from "./state/UseStateCounter";
 
 function App() {
   return (
     <>
-      {/* <ScssPrac /> */}
-      <ScssPrac2 />
+      <UseStateCounter />
     </>
   );
 }
@@ -155,6 +157,28 @@ export default App;
 //       </div>
 //     );
 //   }
+// }
+
+// export default App;
+
+// .js 생략가능
+
+// 10.14 Router수업
+// import PracNav from "./router/PracNav";
+// import PracContent from "./router/PracContent";
+// import PracFooter from "./router/PracFooter";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// function App() {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <PracNav />
+//         <PracContent />
+//         <PracFooter />
+//       </BrowserRouter>
+//     </>
+//   );
 // }
 
 // export default App;
