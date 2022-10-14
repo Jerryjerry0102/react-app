@@ -11,15 +11,15 @@
 // import RouterTest from "./router/RouterTest";
 // // .js 생략가능
 
-import UseStateCounter from "./state/UseStateCounter";
+import Average from "./hook/Average";
 
-function App() {
+const App = () => {
   return (
     <>
-      <UseStateCounter />
+      <Average />
     </>
   );
-}
+};
 
 // 이 코드는 다른 파일에서 이 파일을 import할 때,
 // 위에서 선언한 App 함수를 불러오도록 설정하는 코드
@@ -181,4 +181,31 @@ export default App;
 //   );
 // }
 
+// export default App;
+
+// import { useState } from "react";
+// import Info from "./hook/Info";
+// import UseStateCounter from "./state/UseStateCounter";
+
+// const App = () => {
+//   const [visible, setVisible] = useState(false);
+
+//   return (
+//     <>
+//       <button
+//         onClick={() => {
+//           setVisible(!visible);
+//         }}
+//       >
+//         {visible ? "숨기기" : "보이기"}
+//       </button>
+
+//       <hr />
+//       {visible && <Info />}
+//     </>
+//   );
+// };
+
+// // 이 코드는 다른 파일에서 이 파일을 import할 때,
+// // 위에서 선언한 App 함수를 불러오도록 설정하는 코드
 // export default App;
