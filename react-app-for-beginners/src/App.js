@@ -1,6 +1,7 @@
 import CoinTracker from "./CoinTracker";
 import MovieApp from "./MovieApp";
 import ToDoList from "./ToDoList";
+import "./styles.css";
 
 function App() {
   return (
